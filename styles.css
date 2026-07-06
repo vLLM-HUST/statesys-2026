@@ -266,6 +266,26 @@ img {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.button-light {
+  border: 1px solid #cbd9d8;
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--teal);
+  box-shadow: 0 12px 26px rgba(5, 54, 62, 0.1);
+}
+
+.button-light:hover {
+  border-color: rgba(13, 116, 117, 0.46);
+  background: #fff;
+  box-shadow: 0 16px 34px rgba(5, 54, 62, 0.14);
+}
+
+.resource-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0 4px;
+}
+
 .hero-facts {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
