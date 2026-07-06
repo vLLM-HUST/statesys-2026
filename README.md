@@ -2,8 +2,7 @@
 
 Static website for the StateSys 2026 ACM SIGOPS ATC workshop.
 
-The site is intended to be linked from the official ATC workshop listing while
-keeping a richer standalone identity for the workshop.
+The site can be linked from the official ATC workshop listing.
 
 ## Local Preview
 
