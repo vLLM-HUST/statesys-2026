@@ -17,7 +17,7 @@
     <meta property="og:image" content="/assets/statesys-hero.png" />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
     <link rel="preload" as="image" href="/assets/statesys-hero.png" />
-    <link rel="stylesheet" href="/styles.css?v=20260706-dates1" />
+    <link rel="stylesheet" href="/styles.css?v=20260706-foldout-portraits1" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -130,56 +130,64 @@
               <a href="https://statesys26.hotcrp.com">statesys26.hotcrp.com</a>; activation is pending
               HotCRP administrator approval. Proceedings information will be posted soon.
             </div>
-            <table class="details-table">
-              <caption>
-                Submission requirements
-              </caption>
-              <tbody>
-                <tr>
-                  <th scope="row">Format</th>
-                  <td>ACM <code>acmart</code> template with the <code>sigplan,10pt</code> option, following the ATC 2026 formatting style.</td>
-                </tr>
-                <tr>
-                  <th scope="row">Length</th>
-                  <td>Up to 4 pages, excluding references.</td>
-                </tr>
-                <tr>
-                  <th scope="row">Appendix</th>
-                  <td>Optional appendices may be included but are not guaranteed to be reviewed.</td>
-                </tr>
-                <tr>
-                  <th scope="row">Reviewing</th>
-                  <td>Single-blind; author names and affiliations should appear on submissions.</td>
-                </tr>
-                <tr>
-                  <th scope="row">Paper types</th>
-                  <td>Research papers, position papers, system experience reports, negative results, and work in progress are welcome.</td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="dates-table">
-              <caption>
-                Important dates
-              </caption>
-              <tbody>
-                <tr>
-                  <th scope="row">Paper submission deadline</th>
-                  <td>September 21, 2026</td>
-                </tr>
-                <tr>
-                  <th scope="row">Author notification</th>
-                  <td>October 12, 2026</td>
-                </tr>
-                <tr>
-                  <th scope="row">Camera-ready deadline</th>
-                  <td>October 26, 2026</td>
-                </tr>
-                <tr>
-                  <th scope="row">Workshop</th>
-                  <td>November 15, 2026</td>
-                </tr>
-              </tbody>
-            </table>
+            <details class="foldout">
+              <summary>
+                <span>Submission details and dates</span>
+                <small>Format, length, reviewing model, and schedule</small>
+              </summary>
+              <div class="foldout-body">
+                <table class="details-table">
+                  <caption>
+                    Submission requirements
+                  </caption>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Format</th>
+                      <td>ACM <code>acmart</code> template with the <code>sigplan,10pt</code> option, following the ATC 2026 formatting style.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Length</th>
+                      <td>Up to 4 pages, excluding references.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Appendix</th>
+                      <td>Optional appendices may be included but are not guaranteed to be reviewed.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Reviewing</th>
+                      <td>Single-blind; author names and affiliations should appear on submissions.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Paper types</th>
+                      <td>Research papers, position papers, system experience reports, negative results, and work in progress are welcome.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="dates-table">
+                  <caption>
+                    Important dates
+                  </caption>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Paper submission deadline</th>
+                      <td>September 21, 2026</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Author notification</th>
+                      <td>October 12, 2026</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Camera-ready deadline</th>
+                      <td>October 26, 2026</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Workshop</th>
+                      <td>November 15, 2026</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
             <div class="metric-row" aria-label="Expected participation">
               <div>
                 <span>30-50</span>
@@ -205,30 +213,30 @@
             <h2>Topics of interest include the following areas.</h2>
           </div>
           <div class="topic-grid">
-            <article>
-              <h3>State Access</h3>
+            <details class="topic-card">
+              <summary>State Access</summary>
               <p>Modeling, observability, bottleneck diagnosis, locality, and topology-aware execution.</p>
-            </article>
-            <article>
-              <h3>Runtime Control</h3>
+            </details>
+            <details class="topic-card">
+              <summary>Runtime Control</summary>
               <p>Scheduling, concurrency control, recovery, consistency, elasticity, and reconfiguration.</p>
-            </article>
-            <article>
-              <h3>Memory Hierarchies</h3>
+            </details>
+            <details class="topic-card">
+              <summary>Memory Hierarchies</summary>
               <p>KV and state placement, tiered caching, cache reuse, and cross-layer optimization.</p>
-            </article>
-            <article>
-              <h3>State Evolution</h3>
+            </details>
+            <details class="topic-card">
+              <summary>State Evolution</summary>
               <p>Online updates, long-lived maintenance, migration, and reuse across requests or tasks.</p>
-            </article>
-            <article>
-              <h3>Model Serving</h3>
+            </details>
+            <details class="topic-card">
+              <summary>Model Serving</summary>
               <p>LLM serving, KV cache reuse, retrieval systems, and memory-centric inference services.</p>
-            </article>
-            <article>
-              <h3>Methodology</h3>
+            </details>
+            <details class="topic-card">
+              <summary>Methodology</summary>
               <p>Benchmarks, workload characterization, evaluation practice, and reusable artifacts.</p>
-            </article>
+            </details>
           </div>
         </div>
       </section>
@@ -295,24 +303,52 @@
           </div>
           <div class="organizer-grid">
             <article class="person">
-              <h3>Shuhao Zhang</h3>
-              <p>Huazhong University of Science and Technology</p>
-              <a href="mailto:shuhao_zhang@hust.edu.cn">shuhao_zhang@hust.edu.cn</a>
+              <img class="person-photo" src="/assets/organizers/shuhao-zhang.jpg" alt="Shuhao Zhang" />
+              <div class="person-copy">
+                <h3>Shuhao Zhang</h3>
+                <span class="person-native">张书豪</span>
+                <p>Huazhong University of Science and Technology</p>
+                <details class="person-more">
+                  <summary>Contact</summary>
+                  <a href="mailto:shuhao_zhang@hust.edu.cn">shuhao_zhang@hust.edu.cn</a>
+                </details>
+              </div>
             </article>
             <article class="person">
-              <h3>Xiaofei Liao</h3>
-              <p>Huazhong University of Science and Technology</p>
-              <a href="mailto:xfliao@hust.edu.cn">xfliao@hust.edu.cn</a>
+              <img class="person-photo" src="/assets/organizers/xiaofei-liao.jpg" alt="Xiaofei Liao" />
+              <div class="person-copy">
+                <h3>Xiaofei Liao</h3>
+                <span class="person-native">廖小飞</span>
+                <p>Huazhong University of Science and Technology</p>
+                <details class="person-more">
+                  <summary>Contact</summary>
+                  <a href="mailto:xfliao@hust.edu.cn">xfliao@hust.edu.cn</a>
+                </details>
+              </div>
             </article>
             <article class="person">
-              <h3>Xuchen</h3>
-              <p>East China Normal University</p>
-              <a href="mailto:cxu@dase.ecnu.edu.cn">cxu@dase.ecnu.edu.cn</a>
+              <img class="person-photo" src="/assets/organizers/chen-xu.jpg" alt="Chen Xu" />
+              <div class="person-copy">
+                <h3>Chen Xu</h3>
+                <span class="person-native">徐辰</span>
+                <p>East China Normal University</p>
+                <details class="person-more">
+                  <summary>Contact</summary>
+                  <a href="mailto:cxu@dase.ecnu.edu.cn">cxu@dase.ecnu.edu.cn</a>
+                </details>
+              </div>
             </article>
             <article class="person">
-              <h3>Feng Zhang</h3>
-              <p>Renmin University of China</p>
-              <a href="mailto:fengzhang@ruc.edu.cn">fengzhang@ruc.edu.cn</a>
+              <img class="person-photo" src="/assets/organizers/feng-zhang.jpg" alt="Feng Zhang" />
+              <div class="person-copy">
+                <h3>Feng Zhang</h3>
+                <span class="person-native">张峰</span>
+                <p>Renmin University of China</p>
+                <details class="person-more">
+                  <summary>Contact</summary>
+                  <a href="mailto:fengzhang@ruc.edu.cn">fengzhang@ruc.edu.cn</a>
+                </details>
+              </div>
             </article>
           </div>
         </div>
