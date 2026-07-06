@@ -12,9 +12,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Prepare static output
+        run: |
+          rm -rf dist
+          mkdir -p dist/assets
+          cp index.html styles.css script.js _headers _redirects 404.html dist/
+          cp assets/favicon.svg assets/statesys-hero.png dist/assets/
+
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy . --project-name statesys-2026
+          command: pages deploy dist --project-name statesys-2026

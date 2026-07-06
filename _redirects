@@ -1,0 +1,4 @@
+/.env /404.html 404
+/.git/* /404.html 404
+/.github/* /404.html 404
+/.wrangler/* /404.html 404

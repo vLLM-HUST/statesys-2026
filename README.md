@@ -18,12 +18,12 @@ This repository is configured for Cloudflare Pages as a no-build static site.
 - Project name: `statesys-2026`
 - Production domain: `workshop.sage.org.ai`
 - Build command: empty
-- Build output directory: `.`
+- Build output directory: `dist`
 
 Deploy from the command line:
 
 ```bash
-npx wrangler pages deploy . --project-name statesys-2026
+npm run deploy
 ```
 
 Then attach the custom domain in Cloudflare Pages:
