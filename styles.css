@@ -396,7 +396,8 @@ h2 {
   box-shadow: 0 10px 30px rgba(16, 21, 29, 0.05);
 }
 
-.dates-table {
+.dates-table,
+.details-table {
   width: 100%;
   margin-top: 22px;
   border-collapse: collapse;
@@ -406,7 +407,8 @@ h2 {
   background: #fff;
 }
 
-.dates-table caption {
+.dates-table caption,
+.details-table caption {
   margin-bottom: 10px;
   color: var(--ink);
   font-weight: 900;
@@ -414,7 +416,9 @@ h2 {
 }
 
 .dates-table th,
-.dates-table td {
+.dates-table td,
+.details-table th,
+.details-table td {
   padding: 13px 16px;
   border-bottom: 1px solid #dce4e8;
   text-align: left;
@@ -422,23 +426,42 @@ h2 {
 }
 
 .dates-table tr:hover td,
-.dates-table tr:hover th {
+.dates-table tr:hover th,
+.details-table tr:hover td,
+.details-table tr:hover th {
   background: #f7fbfa;
 }
 
 .dates-table tr:last-child th,
-.dates-table tr:last-child td {
+.dates-table tr:last-child td,
+.details-table tr:last-child th,
+.details-table tr:last-child td {
   border-bottom: 0;
 }
 
-.dates-table th {
+.dates-table th,
+.details-table th {
   width: 52%;
   color: var(--ink);
   font-weight: 850;
 }
 
-.dates-table td {
+.dates-table td,
+.details-table td {
   color: var(--muted);
+}
+
+.details-table th {
+  width: 34%;
+}
+
+.details-table code {
+  padding: 0.08em 0.34em;
+  border-radius: 5px;
+  background: #eef4f3;
+  color: #0f4f50;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.92em;
 }
 
 .metric-row {
