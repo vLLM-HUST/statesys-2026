@@ -31,3 +31,11 @@ Then attach the custom domain in Cloudflare Pages:
 ```bash
 npx wrangler pages domain add statesys-2026 workshop.sage.org.ai
 ```
+
+## GitHub Actions Deployment
+
+The repository also includes `.github/workflows/deploy.yml`. Add these repository
+secrets before enabling the workflow:
+
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
