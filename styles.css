@@ -25,6 +25,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: 88px;
+}
+
 body {
   margin: 0;
   background:
@@ -943,6 +947,10 @@ h2 {
 }
 
 @media (max-width: 860px) {
+  section[id] {
+    scroll-margin-top: 72px;
+  }
+
   .site-header {
     min-height: 64px;
     padding: 0 20px;
