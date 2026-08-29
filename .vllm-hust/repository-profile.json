@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "canonical_registry": "https://github.com/vLLM-HUST/vllm-hust-docs/tree/codex/ecosystem-architecture-reorganization/registry",
+  "repository": "https://github.com/vLLM-HUST/statesys-2026",
+  "repository_role": "public_application",
+  "relation_to_runtime": "adjacent_research",
+  "lifecycle": "incubating",
+  "artifacts": [
+    {
+      "id": "statesys-2026-workshop-website",
+      "artifact_type": "application",
+      "system_role": "adjacent_application",
+      "delivery_model": "source_repository",
+      "execution_planes": ["offline"],
+      "integration_contracts": []
+    }
+  ],
+  "system_boundaries": {
+    "is": ["the static public website for the StateSys 2026 workshop"],
+    "is_not": [
+      "a research paper or experimental artifact by itself",
+      "an inference runtime or plugin",
+      "a serving compatibility authority"
+    ]
+  },
+  "validation": ["node --check script.js", "git diff --check"],
+  "compatibility_document": "README.md"
+}
