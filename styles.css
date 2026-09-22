@@ -535,6 +535,38 @@ h2 {
   white-space: nowrap;
 }
 
+.publication-policy {
+  margin-top: 20px;
+  padding: 20px 22px;
+  border: 1px solid rgba(18, 143, 130, 0.3);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(230, 248, 245, 0.96), rgba(240, 250, 249, 0.96));
+  box-shadow: 0 14px 34px rgba(5, 91, 88, 0.09);
+}
+
+.publication-policy > span {
+  display: block;
+  color: #087d75;
+  font-size: 0.76rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.publication-policy strong {
+  display: block;
+  margin-top: 4px;
+  color: #123f3d;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.publication-policy p {
+  margin: 8px 0 0;
+  color: #3e615f;
+}
+
 .foldout {
   margin-top: 22px;
   border: 1px solid #cbd9d8;
