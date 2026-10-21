@@ -17,7 +17,7 @@ jobs:
           rm -rf dist
           mkdir -p dist/assets
           cp index.html styles.css script.js _headers _redirects 404.html dist/
-          cp assets/favicon.svg assets/statesys-hero.png dist/assets/
+          cp assets/favicon.svg assets/statesys-hero.png assets/statesys-2026-invitation-letter.pdf dist/assets/
           cp -R assets/organizers dist/assets/
 
       - name: Deploy
