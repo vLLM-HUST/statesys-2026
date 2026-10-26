@@ -15,67 +15,64 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/assets/statesys-hero.png" />
-    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preload" as="image" href="/assets/statesys-hero.png" />
-    <link rel="stylesheet" href="/styles.css?v=20260715-topics1" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="./assets/statesys-hero.png" />
+    <link rel="stylesheet" href="./styles.css?v=20261026-web-chairs" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="StateSys 2026 home">
         <span class="brand-mark" aria-hidden="true"></span>
         <span>StateSys 2026</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" data-nav-toggle>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav" data-nav-toggle>
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav id="nav" class="site-nav" data-nav>
-        <a href="#cfp">CFP</a>
-        <a href="#dates">Dates</a>
+      <nav id="nav" class="site-nav" aria-label="Main navigation" data-nav>
+        <a href="#about">About</a>
+        <a href="#dates">Venue &amp; time</a>
         <a href="#topics">Topics</a>
-        <a href="#program">Program</a>
+        <a href="#cfp">CFP</a>
         <a href="#organizers">Organizers</a>
-        <a href="#venue">Venue</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero">
+      <div id="main-content" tabindex="-1"></div>
+      <section class="hero" aria-labelledby="workshop-title">
         <div class="hero-media" aria-hidden="true">
-          <img src="/assets/statesys-hero.png" alt="" />
+          <img src="./assets/statesys-hero.png" alt="" fetchpriority="high" />
         </div>
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">ACM SIGOPS ATC 2026 Workshop</p>
-          <h1>State Management in Modern Parallel and Distributed Systems</h1>
-          <p class="hero-copy">
-            A half-day workshop for researchers and practitioners working on state access,
-            scheduling, migration, reuse, and memory-aware system design.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="#cfp">Call for Papers</a>
-            <a class="button button-secondary" href="/assets/statesys-2026-invitation-letter.pdf" download>Download Invitation Letter (PDF)</a>
-            <a class="button button-secondary" href="https://sigops.org/s/conferences/atc/2026/index.html">ATC 2026</a>
+          <div class="hero-intro">
+            <p class="eyebrow">ACM SIGOPS ATC 2026 Workshop</p>
+            <h1 id="workshop-title">StateSys <span>2026</span></h1>
+            <p class="hero-title">State Management in Modern Parallel and Distributed Systems</p>
+            <p class="hero-copy">A half-day workshop for researchers and practitioners working on state access,
+              scheduling, migration, reuse, and memory-aware system design.</p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button button-primary" href="#dates">Venue &amp; time <span aria-hidden="true">↗</span></a>
+              <a class="button button-secondary" href="./assets/statesys-2026-invitation-letter.pdf" download>Invitation letter <span class="file-label">PDF</span></a>
+            </div>
           </div>
-          <dl class="hero-facts" aria-label="Workshop facts">
-            <div>
-              <dt>Date</dt>
-              <dd>Nov 15, 2026</dd>
-            </div>
-            <div>
-              <dt>Format</dt>
-              <dd>Half day</dd>
-            </div>
-            <div>
-              <dt>Location</dt>
-              <dd>Hong Kong</dd>
-            </div>
-          </dl>
+          <aside id="dates" class="event-card" aria-label="Workshop date, time and venue">
+            <p class="event-card-label">Workshop details</p>
+            <p class="event-date"><time datetime="2026-11-15">15 November<span>2026 / Sunday</span></time></p>
+            <dl>
+              <div><dt>Time</dt><dd>13:30–17:30 <span>Hong Kong time · UTC+8</span></dd></div>
+              <div><dt>Venue</dt><dd>Hyatt Regency Hong Kong, Sha Tin</dd></div>
+              <div><dt>Room</dt><dd>Regency Ballroom I</dd></div>
+            </dl>
+            <a class="event-source" href="https://sigops.org/s/conferences/atc/2026/workshops.html">ATC workshop listing <span aria-hidden="true">↗</span></a>
+          </aside>
         </div>
       </section>
 
-      <section class="intro section">
+      <section id="about" class="intro section">
         <div class="section-inner intro-grid">
           <div>
             <p class="section-kicker">Why StateSys</p>
@@ -91,25 +88,37 @@
         </div>
       </section>
 
-      <section id="dates" class="section compact-section">
+      <section id="topics" class="section">
         <div class="section-inner">
-          <div class="quick-facts" aria-label="Important workshop information">
-            <div>
-              <span>Workshop Date</span>
-              <strong>Sunday, November 15, 2026</strong>
-            </div>
-            <div>
-              <span>Co-located With</span>
-              <strong>ACM SIGOPS ATC 2026</strong>
-            </div>
-            <div>
-              <span>Duration</span>
-              <strong>Half-day workshop</strong>
-            </div>
-            <div>
-              <span>Status</span>
-              <strong>Submissions are open</strong>
-            </div>
+          <div class="section-heading narrow">
+            <p class="section-kicker">Topics</p>
+            <h2>Topics of interest include the following areas.</h2>
+          </div>
+          <div class="topic-grid">
+            <details class="topic-card">
+              <summary>State Access and Sharing</summary>
+              <p>Access paths, shared state, locality, observability, concurrency, and cross-node access.</p>
+            </details>
+            <details class="topic-card">
+              <summary>State Placement and Scheduling</summary>
+              <p>Partitioning, placement, caching, tiering, and state-aware task and resource scheduling.</p>
+            </details>
+            <details class="topic-card">
+              <summary>State Consistency and Coordination</summary>
+              <p>Consistency models, synchronization, concurrency control, replication, and distributed coordination.</p>
+            </details>
+            <details class="topic-card">
+              <summary>State Migration and Recovery</summary>
+              <p>Migration, checkpointing, fault tolerance, elasticity, and online reconfiguration.</p>
+            </details>
+            <details class="topic-card">
+              <summary>State Evolution and Reuse</summary>
+              <p>Online updates, versioning, lifecycle management, and reuse across requests or tasks.</p>
+            </details>
+            <details class="topic-card">
+              <summary>Stateful Systems and Applications</summary>
+              <p>Data and storage systems, stream and graph processing, serverless platforms, and model serving.</p>
+            </details>
           </div>
         </div>
       </section>
@@ -122,25 +131,16 @@
           </div>
           <div class="content-stack">
             <p>
-              We invite submissions on state management in systems software and infrastructure.
-              Relevant work may address production systems, experimental prototypes, measurement
+              The call for papers covered state management in systems software and infrastructure.
+              Topics included production systems, experimental prototypes, measurement
               studies, benchmarks, or position papers that clarify open problems.
             </p>
             <div class="notice">
-              <strong>Submissions are open.</strong> Submit papers through the
-              <a href="https://statesys2026.hotcrp.com/" target="_blank" rel="noreferrer">StateSys 2026 HotCRP site</a>.
-              Papers must be submitted directly in the required two-column format. The 4-page limit
-              applies to the resulting two-column PDF and excludes references. Submission instructions
-              and important dates are listed below.
+              <strong>Submissions are closed.</strong>
+              <p>The submission deadline was September 28, 2026, at 11:59 p.m. Anywhere on Earth (AoE).
+                The original submission requirements and dates remain available below for reference.</p>
             </div>
-            <a class="deadline-callout" href="https://statesys2026.hotcrp.com/" target="_blank" rel="noreferrer">
-              <span class="deadline-callout-label">Submission deadline · Extended</span>
-              <strong>
-                <time datetime="2026-09-28T23:59:59-12:00">September 28, 2026</time>
-              </strong>
-              <span class="deadline-callout-time">11:59 p.m. Anywhere on Earth (AoE)</span>
-              <span class="deadline-callout-action">Submit now <span aria-hidden="true">→</span></span>
-            </a>
+
             <aside class="publication-policy" aria-label="Publication policy">
               <span>Publication policy</span>
               <strong>Non-archival workshop</strong>
@@ -150,8 +150,8 @@
               </p>
             </aside>
             <div class="resource-actions" aria-label="Submission resources">
-              <a class="button button-primary" href="https://statesys2026.hotcrp.com/" target="_blank" rel="noreferrer">
-                Submit via HotCRP
+              <a class="button button-light" href="https://statesys2026.hotcrp.com/" target="_blank" rel="noreferrer">
+                StateSys 2026 HotCRP
               </a>
               <a class="button button-light" href="https://mirrors.ctan.org/macros/latex/contrib/acmart.zip">
                 Download acmart package
@@ -162,8 +162,8 @@
             </div>
             <details class="foldout">
               <summary>
-                <span>Full submission details and schedule</span>
-                <small>Format, length, reviewing model, and schedule</small>
+                <span>Submission requirements &amp; important dates</span>
+                <small>Original CFP · for reference</small>
               </summary>
               <div class="foldout-body">
                 <table class="details-table">
@@ -223,106 +223,27 @@
                     </tr>
                   </tbody>
                 </table>
+                <div class="metric-row" aria-label="Expected participation">
+                  <div>
+                    <span>30-50</span>
+                    <p>expected participants</p>
+                  </div>
+                  <div>
+                    <span>4-6</span>
+                    <p>paper presentations</p>
+                  </div>
+                  <div>
+                    <span>1</span>
+                    <p>invited talk</p>
+                  </div>
+                </div>
               </div>
-            </details>
-            <div class="metric-row" aria-label="Expected participation">
-              <div>
-                <span>30-50</span>
-                <p>expected participants</p>
-              </div>
-              <div>
-                <span>4-6</span>
-                <p>paper presentations</p>
-              </div>
-              <div>
-                <span>1</span>
-                <p>invited talk</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="topics" class="section">
-        <div class="section-inner">
-          <div class="section-heading narrow">
-            <p class="section-kicker">Topics</p>
-            <h2>Topics of interest include the following areas.</h2>
-          </div>
-          <div class="topic-grid">
-            <details class="topic-card">
-              <summary>State Access and Sharing</summary>
-              <p>Access paths, shared state, locality, observability, concurrency, and cross-node access.</p>
-            </details>
-            <details class="topic-card">
-              <summary>State Placement and Scheduling</summary>
-              <p>Partitioning, placement, caching, tiering, and state-aware task and resource scheduling.</p>
-            </details>
-            <details class="topic-card">
-              <summary>State Consistency and Coordination</summary>
-              <p>Consistency models, synchronization, concurrency control, replication, and distributed coordination.</p>
-            </details>
-            <details class="topic-card">
-              <summary>State Migration and Recovery</summary>
-              <p>Migration, checkpointing, fault tolerance, elasticity, and online reconfiguration.</p>
-            </details>
-            <details class="topic-card">
-              <summary>State Evolution and Reuse</summary>
-              <p>Online updates, versioning, lifecycle management, and reuse across requests or tasks.</p>
-            </details>
-            <details class="topic-card">
-              <summary>Stateful Systems and Applications</summary>
-              <p>Data and storage systems, stream and graph processing, serverless platforms, and model serving.</p>
             </details>
           </div>
         </div>
       </section>
 
-      <section id="program" class="section section-dark">
-        <div class="section-inner two-column">
-          <div class="section-heading">
-            <p class="section-kicker">Program</p>
-            <h2>One invited talk and 4–6 paper presentations.</h2>
-          </div>
-          <ol class="timeline">
-            <li>
-              <span>Invited Talk</span>
-              <p>A senior researcher presents perspectives on stateful systems.</p>
-            </li>
-            <li>
-              <span>Paper Session</span>
-              <p>4–6 selected research talks and experience reports.</p>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section official-listing">
-        <div class="section-inner two-column">
-          <div class="section-heading">
-            <p class="section-kicker">Official Listing</p>
-            <h2>Summary for the ATC workshop listing.</h2>
-          </div>
-          <div class="listing-box">
-            <h3>StateSys 2026</h3>
-            <p>State Management in Modern Parallel and Distributed Systems</p>
-            <dl>
-              <div>
-                <dt>Date</dt>
-                <dd>November 15, 2026</dd>
-              </div>
-              <div>
-                <dt>Venue</dt>
-                <dd>Hyatt Regency Hong Kong, Sha Tin</dd>
-              </div>
-              <div>
-                <dt>Contact</dt>
-                <dd><a href="mailto:shuhao_zhang@hust.edu.cn">shuhao_zhang@hust.edu.cn</a></dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
+      <!-- Detailed program deferred pending organizer review. -->
 
       <section id="organizers" class="section">
         <div class="section-inner">
@@ -332,7 +253,7 @@
           </div>
           <div class="organizer-grid">
             <article class="person">
-              <img class="person-photo" src="/assets/organizers/shuhao-zhang.jpg?v=20260713" alt="Shuhao Zhang" />
+              <img class="person-photo" loading="lazy" width="92" height="92" src="./assets/organizers/shuhao-zhang.jpg?v=20260713" alt="Shuhao Zhang" />
               <div class="person-copy">
                 <h3>Shuhao Zhang</h3>
                 <span class="person-native">张书豪</span>
@@ -344,7 +265,7 @@
               </div>
             </article>
             <article class="person">
-              <img class="person-photo" src="/assets/organizers/xiaofei-liao.jpg?v=20260713" alt="Xiaofei Liao" />
+              <img class="person-photo" loading="lazy" width="92" height="92" src="./assets/organizers/xiaofei-liao.jpg?v=20260713" alt="Xiaofei Liao" />
               <div class="person-copy">
                 <h3>Xiaofei Liao</h3>
                 <span class="person-native">廖小飞</span>
@@ -356,7 +277,7 @@
               </div>
             </article>
             <article class="person">
-              <img class="person-photo" src="/assets/organizers/chen-xu.jpg?v=20260713" alt="Chen Xu" />
+              <img class="person-photo" loading="lazy" width="92" height="92" src="./assets/organizers/chen-xu.jpg?v=20260713" alt="Chen Xu" />
               <div class="person-copy">
                 <h3>Chen Xu</h3>
                 <span class="person-native">徐辰</span>
@@ -368,7 +289,7 @@
               </div>
             </article>
             <article class="person">
-              <img class="person-photo" src="/assets/organizers/feng-zhang.jpg?v=20260713" alt="Feng Zhang" />
+              <img class="person-photo" loading="lazy" width="92" height="92" src="./assets/organizers/feng-zhang.jpg?v=20260713" alt="Feng Zhang" />
               <div class="person-copy">
                 <h3>Feng Zhang</h3>
                 <span class="person-native">张峰</span>
@@ -380,36 +301,58 @@
               </div>
             </article>
           </div>
+          <section class="web-chairs" aria-labelledby="web-chairs-title">
+            <h3 id="web-chairs-title">Web Chairs</h3>
+            <div class="web-chair-grid">
+              <article class="web-chair">
+                <h4>Mingqi Wang <span lang="zh">王明琪</span></h4>
+                <a href="mailto:mingqiwang@hust.edu.cn">mingqiwang@hust.edu.cn</a>
+              </article>
+              <article class="web-chair">
+                <h4>Yanbo Chen <span lang="zh">陈彦博</span></h4>
+                <a href="mailto:cybber@hust.edu.cn">cybber@hust.edu.cn</a>
+              </article>
+            </div>
+          </section>
         </div>
       </section>
 
-      <section id="venue" class="section section-light venue">
-        <div class="section-inner venue-grid">
-          <div>
-            <p class="section-kicker">Venue</p>
-            <h2>Co-located with ACM SIGOPS ATC 2026 in Hong Kong.</h2>
-            <p>
-              StateSys 2026 is planned as a half-day workshop on November 15, 2026, before the main
-              ATC conference. ATC 2026 runs November 15-18, 2026 at Hyatt Regency Hong Kong, Sha Tin.
-            </p>
-          </div>
-          <div class="venue-panel">
-            <span>ATC 2026</span>
-            <strong>Hyatt Regency Hong Kong, Sha Tin</strong>
-            <a href="https://sigops.org/s/conferences/atc/2026/index.html">Conference website</a>
-          </div>
-        </div>
-      </section>
     </main>
 
-    <footer class="site-footer">
-      <div>
-        <strong>StateSys 2026</strong>
-        <p>State Management in Modern Parallel and Distributed Systems</p>
+    <footer id="footer" class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <a class="footer-brand" href="#top">StateSys <span>2026</span></a>
+            <p>State Management in Modern Parallel and Distributed Systems</p>
+            <p class="footer-affiliation">Co-located with ACM SIGOPS ATC 2026</p>
+          </div>
+          <div class="footer-column">
+            <h2>Venue &amp; time</h2>
+            <p>Hyatt Regency Hong Kong, Sha Tin</p>
+            <p>Regency Ballroom I</p>
+            <p class="footer-date"><time datetime="2026-11-15">November 15, 2026</time><br />13:30–17:30 (HKT, UTC+8)</p>
+          </div>
+          <div class="footer-column">
+            <h2>Contact</h2>
+            <p>Workshop inquiries</p>
+            <a class="footer-email" href="mailto:shuhao_zhang@hust.edu.cn">shuhao_zhang@hust.edu.cn</a>
+          </div>
+          <nav class="footer-column footer-links" aria-label="Footer links">
+            <h2>Related links</h2>
+            <a href="https://sigops.org/s/conferences/atc/2026/index.html">ATC 2026 website</a>
+            <a href="https://sigops.org/s/conferences/atc/2026/workshops.html">ATC workshop listing</a>
+            <a href="#cfp">Call for Papers</a>
+            <a href="./assets/statesys-2026-invitation-letter.pdf" download>Invitation letter (PDF)</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>StateSys 2026 <span aria-hidden="true">·</span> ACM SIGOPS ATC 2026 Workshop</p>
+          <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        </div>
       </div>
-      <a href="mailto:shuhao_zhang@hust.edu.cn">Contact the organizers</a>
     </footer>
 
-    <script src="/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
