@@ -6,16 +6,35 @@ function updateHeader() {
   header.classList.toggle("is-scrolled", window.scrollY > 12);
 }
 
-navToggle.addEventListener("click", () => {
-  const isOpen = nav.classList.toggle("is-open");
+function setNavigation(isOpen) {
+  nav.classList.toggle("is-open", isOpen);
   navToggle.setAttribute("aria-expanded", String(isOpen));
+  navToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+}
+
+navToggle.addEventListener("click", () => {
+  setNavigation(!nav.classList.contains("is-open"));
 });
 
 nav.addEventListener("click", (event) => {
   if (event.target instanceof HTMLAnchorElement) {
-    nav.classList.remove("is-open");
-    navToggle.setAttribute("aria-expanded", "false");
+    setNavigation(false);
   }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && nav.classList.contains("is-open")) {
+    setNavigation(false);
+    navToggle.focus();
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (!header.contains(event.target)) setNavigation(false);
+});
+
+window.matchMedia("(min-width: 861px)").addEventListener("change", (event) => {
+  if (event.matches) setNavigation(false);
 });
 
 window.addEventListener("scroll", updateHeader, { passive: true });
