@@ -1475,3 +1475,90 @@ h2 { font-size: clamp(1.9rem, 2.9vw, 2.6rem); line-height: 1.15; font-weight: 70
   .footer-column h2 { margin-bottom: 12px; }
   .footer-bottom { align-items: flex-start; flex-direction: column; margin-top: 30px; }
 }
+
+/* Workshop program */
+.program-section {
+  background: #10232d;
+  color: #f3f7f7;
+}
+.program-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 32px;
+  margin-bottom: 38px;
+}
+.program-heading .section-kicker { color: #e9c785; }
+.program-context { color: #c2d0d5; font-size: 0.91rem; line-height: 1.6; }
+.program-context p { margin: 0; }
+.program-context strong { color: #fff; }
+.program-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid #40535c; }
+.program-row {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 24px;
+  padding: 21px 0;
+  border-bottom: 1px solid #40535c;
+}
+.program-time { display: flex; flex-wrap: wrap; align-content: start; gap: 6px; font-size: 0.96rem; color: #b7cbd1; font-variant-numeric: tabular-nums; }
+.program-time time { color: #e9c785; font-weight: 750; }
+.program-event { min-width: 0; }
+.program-event h3, .program-event h4 { margin: 0; font-size: 1.05rem; line-height: 1.4; font-weight: 650; }
+.program-event > p { margin: 4px 0 0; color: #bdcbd0; font-size: 0.9rem; }
+.program-row-break {
+  margin-top: 12px;
+  padding: 22px 20px;
+  border: 1px solid #68715e;
+  border-left: 3px solid #e9c785;
+  border-radius: 4px;
+  background: #283936;
+}
+.program-session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-top: 30px;
+  padding: 20px 22px;
+  border-left: 3px solid #85c8c2;
+  background: #1b343c;
+}
+.program-session-header .program-part {
+  margin: 0 0 5px;
+  color: #e9c785;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.program-session-header h3 { margin: 0; color: #fff; font-size: 1.23rem; line-height: 1.35; }
+.program-session-header .program-session-description { margin: 5px 0 0; color: #c4d4d8; font-size: 0.86rem; }
+.program-session-header .program-session-time { margin: 0; color: #e9c785; font-size: 0.95rem; font-weight: 750; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.program-talk-list { margin: 0 0 0 22px; padding: 0 0 0 22px; list-style: none; border-left: 1px solid #668e90; }
+.program-talk-list > .program-row:last-child { border-bottom: 0; }
+.program-side-event { margin-top: 6px; border-top: 1px solid #40535c; }
+.paper-row { padding: 26px 0; }
+.program-event .paper-label { margin: 0 0 7px; color: #8bd3cd; font-size: 0.74rem; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase; }
+.paper-row .program-event h4 { max-width: 850px; font-size: clamp(1.08rem, 1.5vw, 1.27rem); }
+.program-event .paper-presenter { margin-top: 10px; color: #c8d6db; }
+.paper-presenter strong { color: #fff; }
+.online-badge { display: inline-block; padding: 3px 9px; border: 1px solid #71a8a4; border-radius: 3px; color: #b1e2dc; font-size: 0.67rem; letter-spacing: 0.04em; }
+.paper-details { margin-top: 15px; }
+.paper-details summary { display: inline-block; color: #eac98b; cursor: pointer; font-size: 0.85rem; font-weight: 650; list-style: none; }
+.paper-details summary::-webkit-details-marker { display: none; }
+.paper-details summary::after { content: ' +'; }
+.paper-details[open] summary::after { content: ' −'; }
+.paper-details summary:focus-visible { outline-color: #f0bd56; }
+.paper-detail-body { max-width: 840px; margin-top: 16px; padding-left: 18px; border-left: 2px solid #6c9997; }
+.paper-detail-body h5 { margin: 16px 0 5px; color: #f1f6f6; font-size: 0.88rem; }
+.paper-detail-body p { margin: 0; color: #c8d6da; font-size: 0.9rem; line-height: 1.7; }
+@media (max-width: 700px) {
+  .program-heading { align-items: start; flex-direction: column; gap: 18px; }
+  .program-row { grid-template-columns: 1fr; gap: 8px; padding: 19px 0; }
+  .paper-row { padding: 24px 0; }
+  .program-time { font-size: 0.88rem; }
+  .program-session-header { align-items: flex-start; margin-top: 26px; padding: 18px; }
+  .program-talk-list { margin-left: 12px; padding-left: 16px; }
+  .program-row-break { padding: 18px; }
+}
