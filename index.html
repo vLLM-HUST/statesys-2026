@@ -125,15 +125,49 @@
               <ol class="program-talk-list" aria-label="Invited talks">
                 <li class="program-row program-row-simple">
                   <div class="program-time"><time datetime="2026-11-15T14:10:00+08:00">14:10</time><span>– 14:35</span></div>
-                  <div class="program-event"><h4>Invited Talk 1</h4><p>Speaker details to be announced</p></div>
+                  <article class="program-event">
+                    <h4>Identifying Control-Flow Bottlenecks in Large-Scale RL</h4>
+                    <p class="paper-presenter"><strong>Yancan Mao</strong> · Huazhong University of Science and Technology</p>
+                    <details class="paper-details">
+                      <summary>Speaker bio</summary>
+                      <div class="paper-detail-body">
+                        <h5>Speaker biography</h5>
+                        <p>Yancan Mao is a professor in the School of Computer Science and Technology at Huazhong University of Science and Technology. His research focuses on scalable systems for AI and data-intensive computing, including orchestration for heterogeneous machine learning workloads and distributed stream processing. He received his Ph.D. in Computer Science from the National University of Singapore.</p>
+                      </div>
+                    </details>
+                  </article>
                 </li>
                 <li class="program-row program-row-simple">
                   <div class="program-time"><time datetime="2026-11-15T14:35:00+08:00">14:35</time><span>– 15:00</span></div>
-                  <div class="program-event"><h4>Invited Talk 2</h4><p>Speaker details to be announced</p></div>
+                  <article class="program-event">
+                    <h4>Efficient GPU State Management</h4>
+                    <p class="paper-presenter"><strong>Youyou Lu</strong> · Tsinghua University</p>
+                    <details class="paper-details">
+                      <summary>Abstract &amp; speaker bio</summary>
+                      <div class="paper-detail-body">
+                        <h5>Abstract</h5>
+                        <p>Efficient GPU state management is important for system performance and reliability. This talk presents three systems that address different aspects of the problem. GCR reduces the overhead of GPU checkpointing and restoration. Medusa reuses initialization results to accelerate LLM cold starts. Anchor preserves valid GPU state when a worker exits and reconnects that state to a new worker, reducing the amount of data that must be reloaded during recovery.</p>
+                        <h5>Speaker biography</h5>
+                        <p>Youyou Lu is a tenured associate professor in the Department of Computer Science and Technology at Tsinghua University. His research spans memory, storage, and systems for artificial intelligence. He received his Ph.D. from Tsinghua University.</p>
+                      </div>
+                    </details>
+                  </article>
                 </li>
                 <li class="program-row program-row-simple">
                   <div class="program-time"><time datetime="2026-11-15T15:00:00+08:00">15:00</time><span>– 15:25</span></div>
-                  <div class="program-event"><h4>Invited Talk 3</h4><p>Speaker details to be announced</p></div>
+                  <article class="program-event">
+                    <h4>Breaking the Storage Wall: GPU–CPU–SSD Co-Design for High-Concurrency, Long-Context LLM Inference</h4>
+                    <p class="paper-presenter"><strong>Haodong Wang</strong> · The Hong Kong University of Science and Technology</p>
+                    <details class="paper-details">
+                      <summary>Abstract &amp; speaker bio</summary>
+                      <div class="paper-detail-body">
+                        <h5>Abstract</h5>
+                        <p>Long contexts and high concurrency can make the KV cache exceed GPU memory capacity. Offloading the cache to host memory or SSDs helps address this limit, but data movement can still leave GPUs idle. This talk presents two systems that manage the KV cache across GPU memory, host DRAM, and SSDs. KVDrive improves cache reuse and overlaps computation with data transfers. KVInline uses approximate computation to reduce SSD reads and lets computation proceed before the remaining data arrives. In the reported evaluations, KVDrive achieves up to 1.74× the throughput of existing offloading systems, while KVInline achieves 3.65–7.54× the peak throughput of the strongest evaluated SSD-backed baselines.</p>
+                        <h5>Speaker biography</h5>
+                        <p>Haodong Wang is a third-year Ph.D. student in the Department of Computer Science and Engineering at The Hong Kong University of Science and Technology, supervised by Prof. Song Guo. His research focuses on edge AI systems and model compression, with an emphasis on efficient inference of large models on resource-constrained devices.</p>
+                      </div>
+                    </details>
+                  </article>
                 </li>
               </ol>
               <div class="program-row program-side-event">
